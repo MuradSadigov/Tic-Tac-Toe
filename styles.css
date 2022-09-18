@@ -188,3 +188,17 @@
     height: auto;
     width: 40px;
 }
+
+@media (max-width: 700px)
+{
+    @keyframes draw {
+        from{opacity: 0; backdrop-filter: blur(1px); font-size: 0rem;}
+        to{opacity: 1;  backdrop-filter: blur(10px); font-size: 2rem;}
+    }
+
+    .o-win, .x-win, .draw{
+        font-size: 2rem;
+        animation-name: draw;
+        animation-duration: 5s;
+    }
+}
