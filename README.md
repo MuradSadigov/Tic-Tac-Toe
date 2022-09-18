@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Murad Sadigov</h1>
 <h3 align="center">A motivated Front-end developer</h3>
 
-![App Screenshot]()
-![App Screenshot]()
+![App Screenshot](https://github.com/MuradSadigov/Tic-Tac-Toe/blob/main/Screenshot%20(123).png)
+![App Screenshot](https://github.com/MuradSadigov/Tic-Tac-Toe/blob/main/Screenshot%20(125).png)
 
 - 🌱 I’m currently learning **React.js, Node.js**
 
