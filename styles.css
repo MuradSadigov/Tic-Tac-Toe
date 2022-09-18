@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-game{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.header{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.game-name{
+    font-size: 3rem;
+    transition: all 1s;
+}
+
+.game-name:hover{
+    font-size: 4rem;
+    color: rgb(95, 2, 2);
+}
+
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+
+.start-button{
+    text-align: center;
+    font-size: 3rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+@keyframes main {
+    from{opacity: 0; transform: scale(0.1);}
+    to{opacity: 1; transform: scale(1);}
+}
+
+.main{
+    display: none;
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    animation-name: main;
+    animation-duration: 5s;
+    transform: scale(1);
+}
+
+.control-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.reset, .turn, .scores, .next-round{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-round{
+    cursor: pointer;
+}
+
+.reset{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.scores{
+    height: 40px;
+    width: 100px;
+}
+
+
+.turn{
+    height: 40px;
+    width: 80px;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1px 1px;
+}
+
+.box{
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.scores{
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes draw {
+    from{opacity: 0; backdrop-filter: blur(1px); font-size: 0rem;}
+    to{opacity: 1;  backdrop-filter: blur(10px); font-size: 3rem;}
+}
+
+
+.draw{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:darkgoldenrod;
+    font-size: 3rem;
+    animation-name: draw;
+    animation-duration: 5s;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.x-win{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 3rem;
+    animation-name: draw;
+    animation-duration: 5s;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.o-win{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:green;
+    font-size: 3rem;
+    animation-name: draw;
+    animation-duration: 5s;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.footer{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.linkedin-img, .github-img{
+    height: auto;
+    width: 40px;
+}
